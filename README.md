@@ -1,2 +1,2 @@
 # blackjack
-Blackjack game learning project
+A Blackjack game as a learning project

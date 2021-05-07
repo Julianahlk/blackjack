@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blackjack</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="deck.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="resultContainer" id="game-result"></div>
+    <div class="container">
+      <div class="player-area">
+        <div class="score">Dealer: <span id="dealer-score">0</span></div>
+        <div class="hand" id="dealer-hand"></div>
+      </div>
+
+      <div class="buttons" id="buttons">
+        <button class="button hitButton" id="hit-button">Hit</button>
+        <button class="button standButton" id="stand-button">Stand</button>
+      </div>
+      <div class="player-area">
+        <div class="score">Player: <span id="player-score">0</span></div>
+        <div class="hand" id="player-hand"></div>
+      </div>
+    </div>
+  </body>
+</html>

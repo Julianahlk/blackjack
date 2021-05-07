@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #065235;
+}
+
+.container {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+  background: radial-gradient(#00000000, #0000005f);
+}
+
+.hand {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons {
+  position: absolute;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+  justify-content: center;
+}
+
+.button {
+  width: 10vw;
+  transition-duration: 0.4s;
+  text-align: center;
+  height: 95px;
+  font-size: 28px;
+  color: white;
+  background-color: #24A61A;
+  margin: 120px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: rgba(53, 53, 53, 0.59);
+  -webkit-box-shadow: 2px -2px 9px -1px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 2px -2px 9px -1px rgba(0, 0, 0, 1);
+  box-shadow: 1px -1px 8px -1px rgba(0, 0, 0, 1);
+}
+
+.button:hover {
+  background-color: rgba(172, 172, 172, 0.645);
+}
+
+.player-area {
+  margin: 110px;
+  background-color: #969696;
+}
+
+.score {
+  height: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  background: #4d4d4d;
+  display: block;
+}
+
+.card-front {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  width: 60px;
+  height: 90px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 2px;
+  background-color: #f6f7eb;
+  display: flex;
+  -webkit-box-shadow: 2px -2px 9px -1px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 2px -2px 9px -1px rgba(0, 0, 0, 1);
+  box-shadow: 2px -2px 9px -1px rgba(0, 0, 0, 1);
+  margin: 15px;
+}
+
+/* Source https://github.com/stayko/blackjack-js/blob/master/styles.css */
+.card-back {
+  position: relative;
+  width: 60px;
+  height: 90px;
+  border-radius: 5px;
+  padding: 2px;
+  background: #36c;
+  background: linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, 0.8) 75%) 0 0,
+    linear-gradient(145deg, transparent 75%, rgba(255, 255, 255, 0.8) 75%) 0 0,
+    linear-gradient(215deg, transparent 75%, rgba(255, 255, 255, 0.8) 75%) 7px -15px,
+    linear-gradient(145deg, transparent 75%, rgba(255, 255, 255, 0.8) 75%) 7px -15px, rgb(0, 89, 255);
+  background-size: 15px 30px;
+  -webkit-box-shadow: 2px -2px 9px -1px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 2px -2px 9px -1px rgba(0, 0, 0, 1);
+  box-shadow: 2px -2px 9px -1px rgba(0, 0, 0, 1);
+  margin: 15px;
+}
+
+.♦,
+.♥ {
+  color: #e94f37;
+}
+
+.♠,
+.♣ {
+  color: #393e41;
+}
+
+.rank {
+  position: absolute;
+  width: 30px;
+  height: 18px;
+}
+
+.top {
+  top: 2px;
+  left: 4px;
+}
+
+.bottom {
+  bottom: 0;
+  right: 2px;
+  text-align: right;
+}
+
+.suit {
+  margin: auto;
+  font-size: 30px;
+}
+
+.resultContainer {
+  color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(#00000000, #000000);
+  z-index: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 65px;
+}

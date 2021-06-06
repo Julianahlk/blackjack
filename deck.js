@@ -17,7 +17,7 @@ class Deck {
 
   shuffle() {
     for (let i = this.cardsCount - 1; i > 0; i--) {
-      const newIndex = Math.floor(Math.random() * (i + 1)); // why is it i + 1 ?
+      const newIndex = Math.floor(Math.random() * (i + 1));
       const oldValue = this.cards[newIndex];
       this.cards[newIndex] = this.cards[i];
       this.cards[i] = oldValue;
